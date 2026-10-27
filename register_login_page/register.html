@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New Account</title>
+</head>
+<body>
+    <center>
+        <h1>Create Your Account</h1>
+        <p>Fill in the details below to register.</p>
+
+        <hr width="400">
+
+        <form action="https://fosterai.in/" method="post">
+            <fieldset>
+            <legend><h3>Register_Here</h2></legend>
+
+            <table cellpadding="8">
+
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="fullname"
+                               name="fullname"
+                               placeholder="Enter your full name"
+                               size="35" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email Address:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               size="35" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mobile">Mobile Number:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" id="mobile"
+                               name="mobile"
+                               placeholder="Enter 10-digit mobile number"
+                               pattern="[0-9]{10}"
+                               maxlength="10"
+                               size="35" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" id="dob"
+                               name="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Create Password:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" id="password"
+                               name="password"
+                               placeholder="Create a password"
+                               minlength="8"
+                               size="35" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Confirm">Confirm Password:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" id="confirm"
+                               name="confirm"
+                               placeholder="Re-enter your password"
+                               minlength="8"
+                               size="35" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="terms"
+                               name="terms" required>
+                        <label for="terms">
+                            I agree to the Terms and Conditions.
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <button type="submit">
+                            Create Account
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+        <hr width="400">
+        <p>Already have an account?</p>
+        <p>
+            <a href="login.html">Login Here</a>
+        </p>
+        <br>
+    </center>
+</body>
+</html>
